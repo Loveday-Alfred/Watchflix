@@ -9,7 +9,10 @@ export default makeStyles((theme) => ({
     },
     title: {
       flexGrow: 1,
-      color: 'red'
+      color: 'red',
+      fontFamily: "Pacifico",
+      fontSize: '30px',
+      textTransform: 'capitalize'
     },
     appBarTransparent: {
         backgroundColor: 'transparent',
@@ -17,8 +20,6 @@ export default makeStyles((theme) => ({
         transition: 'all 0.5s'
     },
     appBarSolid: {
-        backgroundColor: '#111',
-        transitionTimingFunction: 'ease-in',
-        transition: 'all 0.5s'
+        backgroundColor: '#111'
     }
   }));

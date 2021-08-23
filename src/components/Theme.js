@@ -1,21 +1,21 @@
 import { createTheme } from '@material-ui/core/styles';
 
-const resBlac = "#111";
-const resGrey = "#f2f4f3";
+// const resBlac = "#111";
+// const resGrey = "#f2f4f3";
 
 export default createTheme({
-    palette: {
-        common: {
-            white: `${resGrey}`,
-            grey: `${resBlac}`
-        },
-        primary: {
-            main: `${resGrey}`
-        },
-        secondary: {
-            main: `${resBlac}`
-        }
-    },
+    // palette: {
+    //     common: {
+    //         white: `${resGrey}`,
+    //         grey: `${resBlac}`
+    //     },
+    //     primary: {
+    //         main: `${resGrey}`
+    //     },
+    //     secondary: {
+    //         main: `${resBlac}`
+    //     }
+    // },
     typography: {
         tab: {
             fontFamily: "Raleway",

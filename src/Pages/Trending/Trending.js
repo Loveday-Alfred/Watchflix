@@ -1,16 +1,16 @@
-import './Banner.css';
+import useStyles from './TrendingStyles';
 import BannerImage from './photo.jpg';
 
 const Banner = () => {
+    const classes = useStyles();
+    
     return (
         <>
-            <header className="banner" 
+            <div className={classes.banner}
               style={{
-                  backgroundSize: "cover", 
-                  backgroundPosition: "center center", 
                   backgroundImage: `url(${BannerImage})` 
                   }}>
-            </header>
+            </div>
             <div className="banner-fadeBottom"></div>
         </>
     );

@@ -1,19 +1,9 @@
-import useStyles from './TrendingStyles';
-import BannerImage from './photo.jpg';
-
-const Banner = () => {
-    const classes = useStyles();
-    
+const Trending = () => {
     return (
-        <>
-            <div className={classes.banner}
-              style={{
-                  backgroundImage: `url(${BannerImage})` 
-                  }}>
-            </div>
-            <div className="banner-fadeBottom"></div>
-        </>
-    );
+        <div>
+            gggggggggggg
+        </div>
+    )
 }
 
-export default Banner;
+export default Trending

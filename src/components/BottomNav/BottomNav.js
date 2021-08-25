@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import useStyles from './BottomNavStyles';
 import { BottomNavigation, BottomNavigationAction } from '@material-ui/core';
-import { Whatshot, Movie, Tv, Search } from '@material-ui/icons';
+import { Movie, Tv, Search, Home } from '@material-ui/icons';
 import { useHistory } from 'react-router-dom';
 
 export default function BottomNav() {
@@ -25,7 +25,7 @@ export default function BottomNav() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction style={{color: 'white'}} label="Trending" icon={<Whatshot />} />
+      <BottomNavigationAction style={{color: 'white'}} label="Home" icon={<Home />} />
       <BottomNavigationAction style={{color: 'white'}} label="Movies" icon={<Movie />} />
       <BottomNavigationAction style={{color: 'white'}} label="Series" icon={<Tv />} />
       <BottomNavigationAction style={{color: 'white'}} label="Search" icon={<Search />} />

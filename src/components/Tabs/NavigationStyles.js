@@ -10,5 +10,9 @@ export default makeStyles((theme) => ({
     small: {
       width: theme.spacing(4),
       height: theme.spacing(4),
+      [theme.breakpoints.down("sm")]: {
+        width: theme.spacing(2.8),
+        height: theme.spacing(2.8),
+        }
     },
   }));

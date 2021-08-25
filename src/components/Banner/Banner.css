@@ -1,0 +1,137 @@
+.banner {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_contents {
+  padding-top: 8rem;
+  width: auto;
+  margin-left: 50px;
+}
+
+.banner_title {
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 45px;
+  font-weight: 800;
+  color: white;
+  font-family: "Roboto";
+}
+
+.banner_button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  font-family: "Raleway";
+}
+
+.banner_button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.banner_description {
+  font-family: "Raleway";
+  padding: 0;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.banner-fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+@media only screen and (max-width: 790px) {
+  .banner-fadeBottom {
+    height: 25.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+  .banner_description {
+    font-size: 2rem;
+    color: white;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .banner-fadeBottom {
+    height: 34.2rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+  .banner_description {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.3;
+  }
+  .banner_contents {
+    padding-top: 20rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .banner_contents {
+    margin-left: 0px;
+    padding: 150px 2px 2px 15px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .banner_title {
+    font-size: 2rem;
+    height: 10px;
+    color: white;
+    padding-bottom: 1rem;
+  }
+  .banner_description {
+    font-size: 0.8rem;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .banner-fadeBottom {
+    height: 12.5rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+}

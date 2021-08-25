@@ -9,7 +9,7 @@ export default function ButtonAppBar() {
     <div className={classes.toolbar}>
       <AppBar position="fixed" style={{backgroundColor: '#111'}}>
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography onClick={() => window.scroll(0, 0)} variant="h6" className={classes.title}>
             Watchflix
           </Typography>
           <ImageAvaters />

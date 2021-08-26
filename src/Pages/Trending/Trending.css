@@ -7,9 +7,10 @@
 .header-title {
   text-transform: capitalize;
   font-family: "Raleway";
-  font-size: 2vw;
-  padding: 4px;
-  border-radius: 50px;
+  font-size: 2rem;
+  padding-left: 15px;
+  padding-top: 19px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 700px) {

@@ -27,14 +27,8 @@ const Trending = () => {
         <>
         <Banner />
         <Container>
-           <span style={{
-               textTransform: 'capitalize', 
-               fontFamily: 'Raleway', 
-               fontSize: '2rem',
-               paddingLeft: '12px', 
-               paddingTop: '18px'
-            }} className="header-title">
-               trending
+           <span className="header-title">
+            trending
            </span>
         <div className="trending">
           {movies && movies.map((movie) => (

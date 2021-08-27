@@ -1,4 +1,4 @@
-import { Chip, Container } from "@material-ui/core";
+import { Chip } from "@material-ui/core";
 import axios from "axios"
 import { useEffect } from "react";
 
@@ -37,7 +37,6 @@ const Genres = ({selectedGenres, setSelectedGenres, genres, setGenres, type, set
 
     return (
         <>
-        <Container>
         <div style={{padding: "6px 0"}}>
             {selectedGenres && 
             selectedGenres.map((genre) => (
@@ -63,7 +62,6 @@ const Genres = ({selectedGenres, setSelectedGenres, genres, setGenres, type, set
                 />
             ))}
         </div>
-        </Container>
        </>
     )
 }

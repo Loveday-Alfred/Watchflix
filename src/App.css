@@ -3,6 +3,7 @@
 }
 
 .app {
+  padding-top: 0px;
   min-height: 100vh;
   color: white;
   background-color: #111;

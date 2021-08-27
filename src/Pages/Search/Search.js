@@ -23,19 +23,23 @@ const Search = () => {
   });
 
   const fetchSearch = async () => {
-    const { data } = axios.get(
-      `https://api.themoviedb.org/3/search${type ? "tv" : "movie"}?api_key=${process.env.REACT_APP_API_KEY
-      }&language=en-US&query=${searchText}&page=${page}&include_adult=false`
-    );
-
-    setSeries(data.results);
-    setNumOfPage(data.total_pages);
+    try {
+      const { data } = await axios.get(
+        `https://api.themoviedb.org/3/search/${type ? "tv" : "movie"}?api_key=${
+          process.env.REACT_APP_API_KEY
+        }&language=en-US&query=${searchText}&page=${page}&include_adult=false`
+      );
+      setSeries(data.results);
+      setNumOfPage(data.total_pages);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
     fetchSearch();
     // eslint-disable-next-line
-  }, [page, genreforURL]);
+  }, [type, page]);
 
 
     return (
@@ -59,13 +63,13 @@ const Search = () => {
         </div>
         <Tabs
           value={type}
-          indicatorColor="secon"
+          indicatorColor="primary"
           textColor="primary"
           onChange={(event, newValue) => {
             setType(newValue);
             setPage(1);
           }}
-          style={{ paddingBottom: 5 }}
+          style={{ paddingBottom: 20 }}
           aria-label="disabled tabs example"
         >
           <Tab style={{ width: "50%" }} label="Search Movies" />

@@ -45,10 +45,10 @@ export default function MovieModal({ children, media, id }) {
 
 
   return (
-    <div>
-      <button type="button" className="media" onClick={handleOpen}>
+    <>
+      <div type="button" className="media" onClick={handleOpen}>
         { children }
-      </button>
+      </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -102,7 +102,7 @@ export default function MovieModal({ children, media, id }) {
               </span>
 
               <div>
-                <Carousel id={id} media_type={media} />
+                <Carousel id={id} media={media} />
               </div>
 
               <Button
@@ -112,7 +112,7 @@ export default function MovieModal({ children, media, id }) {
                 target="__blank"
                 href={`https://www.youtube.com/watch?v=${video}`}
               >
-                Watch the Trailer
+                Watch Trailer
               </Button>
             </div>
           </div>
@@ -120,6 +120,6 @@ export default function MovieModal({ children, media, id }) {
       )}
     </Fade>
       </Modal>
-    </div>
+    </>
   );
 }

@@ -17,12 +17,14 @@ const App = () => {
     <Navbar />
     <div className="app">
       <Switch>
-        <Route path='/' component={Trending} exact />
+       <>
+        <Route path='/' exact><Trending /></Route>
         <Container>
-          <Route path='/movies' component={Movies} />
-          <Route path='/series' component={Series} />
-          <Route path='/search' component={Search} />
+          <Route path='/movies'><Movies /></Route>
+          <Route path='/series'><Series /></Route>
+          <Route path='/search'><Search /></Route>
         </Container>
+       </>
       </Switch>
     </div>
     <BottomNav />

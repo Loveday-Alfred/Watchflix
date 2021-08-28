@@ -25,7 +25,7 @@ const Banner = () => {
         <header className="banner" style={{ 
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            backgroundImage: `url("https://image.tmdb.org/t/p/original/${movies?.backdrop_path}")`
+            backgroundImage: `url("https://image.tmdb.org/t/p/movie/${movies?.backdrop_path}")`
         }}>
         <div className="banner_contents">
                     <h1 className="banner_title">{movies?.title || movies?.name || movies?.original_name}</h1>

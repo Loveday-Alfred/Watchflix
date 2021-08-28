@@ -9,6 +9,7 @@
   position: relative;
   font-family: "Raleway", sans-serif;
   transition: transform 450ms;
+  cursor: pointer;
 }
 
 .media:hover {

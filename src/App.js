@@ -9,6 +9,7 @@ import Movies from './Pages/Movies/Movies';
 import Series from './Pages/Series/Series';
 import Search from './Pages/Search/Search';
 import BottomNav from './components/BottomNav/BottomNav';
+import ErrorPage from './ErrorPage/ErrorPage';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/movies'><Movies /></Route>
           <Route path='/series'><Series /></Route>
           <Route path='/search'><Search /></Route>
+          <Route path='*'><ErrorPage /></Route>
         </Container>
        </>
       </Switch>

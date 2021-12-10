@@ -24,7 +24,7 @@ export default function BottomNav() {
       }}
       showLabels
       className={classes.root}
-      style={{ backgroundColor: "#111" }}
+      // style={{ backgroundColor: "#111" }}
     >
       <BottomNavigationAction
         style={{ color: "white" }}

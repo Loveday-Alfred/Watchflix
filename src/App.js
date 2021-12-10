@@ -19,17 +19,17 @@ const App = () => {
         <div className="app">
           <Switch>
             <>
-              <Route path="/" exact>
+              <Route basename={process.env.REACT_APP_API_KEY} path="/" exact>
                 <Trending />
               </Route>
               <Container>
-                <Route path="/movies">
+                <Route basename={process.env.REACT_APP_API_KEY} path="/movies">
                   <Movies />
                 </Route>
-                <Route path="/series">
+                <Route basename={process.env.REACT_APP_API_KEY} path="/series">
                   <Series />
                 </Route>
-                <Route path="/search">
+                <Route basename={process.env.REACT_APP_API_KEY} path="/search">
                   <Search />
                 </Route>
                 {/* <Route path='*'><ErrorPage /></Route> */}

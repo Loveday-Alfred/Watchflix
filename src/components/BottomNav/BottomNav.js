@@ -27,22 +27,22 @@ export default function BottomNav() {
       style={{ backgroundColor: "#111" }}
     >
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Home"
         icon={<Home />}
       />
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Movies"
         icon={<Movie />}
       />
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Series"
         icon={<Tv />}
       />
       <BottomNavigationAction
-        style={{ color: "black" }}
+        style={{ color: "white" }}
         label="Search"
         icon={<Search />}
       />

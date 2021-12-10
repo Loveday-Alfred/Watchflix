@@ -1,0 +1,20 @@
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.header-title {
+  text-transform: capitalize;
+  font-family: "Raleway";
+  font-size: 2rem;
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+  .header-title {
+    font-size: 6.4vw;
+  }
+}

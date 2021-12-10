@@ -24,25 +24,25 @@ export default function BottomNav() {
       }}
       showLabels
       className={classes.root}
-      style={{ backgroundColor: "#111" }}
+      // style={{ backgroundColor: "#111" }}
     >
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "black" }}
         label="Home"
         icon={<Home />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "black" }}
         label="Movies"
         icon={<Movie />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "black" }}
         label="Series"
         icon={<Tv />}
       />
       <BottomNavigationAction
-        style={{ color: "white" }}
+        style={{ color: "black" }}
         label="Search"
         icon={<Search />}
       />
